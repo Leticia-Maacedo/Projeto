@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&family=Tilt+Neon&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    flex: 20%;
+    text-align: left;
+    margin-left: 8%;
+}
+
+.logo h1 {
+    color: #ff0000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 34px;
+}
+
+.menu {
+    flex: 60%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 100%;
+    padding: 20px 16px;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco1 {
+    flex: 40%;
+    margin-left: 8%;
+}
+
+.imgbloco1 {
+    flex: 40%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.bloco1 h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #ff0000;
+    padding: 0;
+    margin: 0;
+}
+
+.bloco1 p {
+    color: gray;
+    text-align: left;
+}
+
+section {
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5%;
+    width: 90%;
+}
+
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ff0000;
+}
+
+.sobre {
+    margin-top: 30%;
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    background: #ff0000;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    border-radius: 2%;
+}
+
+.sobre p {
+    text-align: center;
+    margin: 2%;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1%;
+    border: 1px solid crimson;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    min-width: 250px;
+    height: 250px;
+}
+
+footer {
+    margin-top: 100px;
+    height: 300px;
+    background-color: #ff0000;
+    text-align: center;
+}
+
+.contatos {
+    text-align: center;
+    color: black;
+}
+
+.contatos a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.rodape {
+    padding: 100px;
+    border: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        flex: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .menu {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .bloco1, .imgbloco1 {
+        flex: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .bloco1 h2 {
+        font-size: 18px;
+    }
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 10px 8px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .bloco1, .imgbloco1 {
+        flex: 100%;
+        margin-left: 0;
+    }
+
+    .bloco1 h2 {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+}
